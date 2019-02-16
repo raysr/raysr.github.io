@@ -23,25 +23,16 @@ html, body
 }
 .project
 {
-  border-style: solid;
+
   color:black;
-  display: flex;
-  border: 
+
 }
 .project-title
 {
-  width: 150px;
-  max-width: 150px;
-  min-width: 150px;
-  border-style: solid;
   font-size: 25px;
-  color: #5274a5;
 }
 .project-description
 {
-  text-align: center;
-  border-style: solid;
-display:block;
 }
 .row 
 {
@@ -49,8 +40,7 @@ display:block;
 }
 .project-technologies
 {
-  border-style: solid;
-color: #f29582;
+
 }
 .container
 {
@@ -83,4 +73,12 @@ color: #f29582;
 .rest-row
 {
   width: 100%;
+}
+.cibled
+{
+  color:white;
+}
+#languages
+{
+  justify-content: space-between; 
 }
