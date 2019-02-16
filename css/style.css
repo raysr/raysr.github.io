@@ -18,37 +18,48 @@ html, body
 {
   color:black;
   background-color:#dee1e5;
+  opacity: 1;
   padding: 30px;
 }
 .project
 {
   border-style: solid;
   color:black;
-  display: inline-block;
+  display: flex;
   border: 
 }
 .project-title
 {
+  width: 150px;
+  max-width: 150px;
+  min-width: 150px;
   border-style: solid;
-display:inline;
-font-size: 25px;
-color: #5274a5;
+  font-size: 25px;
+  color: #5274a5;
 }
 .project-description
 {
+  text-align: center;
   border-style: solid;
-display:inline;
+display:block;
+}
+.row 
+{
+  z-index:9999;
 }
 .project-technologies
 {
   border-style: solid;
-display:inline;
 color: #f29582;
 }
 .container
 {
+  z-index: 9999;
   overflow: hidden;
+
   width: 100%;
+            max-width:initial;
+           
 }
 .title-section
 {
@@ -61,11 +72,15 @@ color: #f29582;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  opacity: 0.48;
+
 }
 .progress
 {
   display: inline-block;
   white-space: nowrap;
   margin: 10px;
+}
+.rest-row
+{
+  width: 100%;
 }
