@@ -2,10 +2,11 @@ html, body
 {
   height: 100%;
   width: 100%;
-  background-color: #346789;
+  background-color: #3d4d5a;
   background-image: url(resources/backgroun.png);
-  font-family: Helvetica;
-  color: #d7dfea; 
+  font-family: Calibri;
+  color: #efeff1; 
+    font-size: 18px;
 }
 .photo
 {
@@ -16,21 +17,38 @@ html, body
 }
 .zone
 {
-  color:black;
-  background-color:#dee1e5;
-  opacity: 1;
+  color:#1f2b37;
+  background-color:#d9d8dd;
+  
   padding: 30px;
+}
+hr {
+    z-index: 99999;
+    color: aqua;
+    display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
 }
 .project
 {
 
-  color:black;
+  color:#1f2b37;
 
 }
+.fa-github:before
+{
+    color:#2d3f4b;
+}
+
+
 .project-title
 {
   font-size: 35px;
-  color:#4286f4 ;
+  color:#1f2b37 ;
 }
 .project-description
 {
@@ -55,7 +73,8 @@ color:#4e6487;
 }
 .title-section
 {
- color:black;
+    font-weight: bold;
+ color:#2e4150;
 }
 #particles-js {
   position: absolute;
@@ -80,7 +99,7 @@ color:#4e6487;
 }
 .cibled
 {
-  color:white;
+  color:#efeff1;
 }
 #languages
 {
@@ -89,9 +108,27 @@ color:#4e6487;
 .card-action
 {
   text-align: center;
+    color:#3e4750;
 }
+.card-content
+{
+    font-size: 16px;
+}
+
 .link-rel
 {
   color: white;
   font-size: 17px;
+}
+.scholar
+{
+    float: right;
+    max-height: 100px;
+    max-width: 100px;
+}
+#address
+{
+    padding-top:50px;
+    font-size:22px;
+    z-index:9999;
 }
