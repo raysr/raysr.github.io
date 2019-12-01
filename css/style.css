@@ -24,14 +24,14 @@ html, body
 }
 hr {
     z-index: 99999;
-    color: aqua;
+    color: #3e4750;
     display: block;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   margin-left: auto;
   margin-right: auto;
   border-style: inset;
-  border-width: 1px;
+  border-width: 3px;
 }
 .project
 {
