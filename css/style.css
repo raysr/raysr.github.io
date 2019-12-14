@@ -2,133 +2,304 @@ html, body
 {
   height: 100%;
   width: 100%;
-  background-color: #3d4d5a;
-  background-image: url(resources/backgroun.png);
-  font-family: Calibri;
-  color: #efeff1; 
+  background-color: #d0d1d3;
+  background-image: url('../resources/background.png');
+  font-family: 'Cairo';
+  color: black; 
     font-size: 18px;
 }
-.photo
-{
-  border-radius: 50% 50%;
-  height: 250px;
-  width: 250px;
-  border: 2px solid rgba(255, 255, 255, 0.7);
+.row{
+  max-height: 100%;
+  margin-bottom: 0px;
 }
-.zone
-{
-  color:#1f2b37;
-  background-color:#d9d8dd;
-  
-  padding: 30px;
-}
-hr {
-    z-index: 99999;
-    color: #3e4750;
-    display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 3px;
-}
-.project
-{
-
-  color:#1f2b37;
-
-}
-.fa-github:before
-{
-    color:#2d3f4b;
-}
-
-
-.project-title
-{
-  font-size: 35px;
-  color:#1f2b37 ;
-}
-.project-description
-{
-}
-.row 
-{
-  z-index:9999;
-}
-.project-technologies
-{
-font-style: italic;
-color:#4e6487;
+html{
+  max-height: 100%;
 }
 .container
 {
-  z-index: 9999;
-  overflow: hidden;
+min-width: 80%;
+}
+.photo
+{
+  margin-top:5%;
+  border-radius: 50% 50%;
+  max-height: 40%;
+  max-width: 40%;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+.links
+{
+  max-height: 60%;
+}
+#leftpart
+{
+  background-color: #231f20;
+  color: #cdcbcc;
 
-  width: 100%;
-            max-width:initial;
-           
-}
-.title-section
-{
-    font-weight: bold;
- color:#2e4150;
-}
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  min-width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-
-}
-.progress
-{
-  display: inline-block;
-  white-space: nowrap;
-  margin: 10px;
-}
-.rest-row
-{
-  width: 100%;
-}
-.cibled
-{
-  color:#efeff1;
-}
-#languages
-{
-  justify-content: space-between; 
-}
-.card-action
-{
   text-align: center;
-    color:#3e4750;
 }
-.card-content
+#rightpart
 {
-    font-size: 16px;
+  padding: 20px;
+  background-color: #fefefe;
+  overflow-y:auto;
+      overflow-x:hidden;
+}
+#about-section
+{
+  background-color: #e5e6e8;
+}
+.row
+{
+  height: 100%;
+  max-height: 100%;
+}
+.container
+{
+  height: 100%;
 }
 
-.link-rel
+.section-title
 {
-  color: white;
-  font-size: 17px;
+  font-size:28px;
+  color:#4f4f4f;
 }
-.scholar
+.project h2
 {
-    float: right;
-    max-height: 100px;
-    max-width: 100px;
+  font-size:24px;
+  color: #616161;
 }
-#address
+.project p
 {
-    padding-top:50px;
-    font-size:22px;
-    z-index:9999;
+  font-size:22px;
+  color:#838383;
+}
+.col 
+{
+  height: 100%;
+}
+
+.event-period
+{
+  font-size:15px;
+}
+.icon:hover
+{
+  color:#e6d7ae;
+  font-size: 24px;
+}
+.icon
+{
+  font-size: 24px;
+}
+.icona
+{
+  color:#e7e3e4;
+  font-size: 24px;
+}
+.icona:hover
+{
+  color:#e6d7ae;
+  text-decoration: none;
+}
+.skill-container h3
+{
+  padding:0px;
+}
+.colskill
+{
+  padding:0px;
+}
+.title-sec
+{
+  color:#292929 !important;
+  font-size:24px;
+}
+.skill-section
+{
+  max-height: 60%;
+}
+.head-section
+{
+  max-height: 40%;
+
+}
+.bottom-section
+{
+
+}
+.header{
+  color: #2a2a2a !important;
+}
+.header:hover{
+  color:#ede39c;
+}
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+	background: black;
+	border-radius: 50px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+	border-radius: 50px;
+	box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+	background:
+		-webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+		-webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+		-webkit-linear-gradient(left, #ba7448, #c4672d);
+	
+	/* Looks great, now animating it */
+	background-size: 25px 14px, 100% 100%, 100% 100%;
+	-webkit-animation: move 5s linear 0 infinite;
+}
+
+/* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
+
+@-webkit-keyframes move {
+	0% {background-position: 0px 0px, 0 0, 0 0}
+	100% {background-position: -100px 0px, 0 0, 0 0}
+}
+
+
+
+/* SKILLS CIRCLES */
+.skill-container h3{
+  font-size: 24px;
+}
+
+
+
+.skill-bar {
+  font-size: 24px;
+}
+
+.skill-bar li {
+  display: inline;
+}
+
+.skill-bar li:before {
+  content: '•';
+}
+
+.level-1-skill li:nth-child(-n+1) {
+  color: #edde9b;
+}
+
+.level-2-skill li:nth-child(-n+2) {
+  color: #edde9b;
+}
+
+
+.level-3-skill li:nth-child(-n+3) {
+  color: #edde9b;
+}
+
+.level-4-skill li:nth-child(-n+4) {
+  color: #edde9b;
+}
+
+.level-5-skill li:nth-child(-n+5) {
+  color: #edde9b;
+}
+.level-6-skill li:nth-child(-n+6) {
+  color: #edde9b;
+}
+.level-7-skill li:nth-child(-n+7) {
+  color: #edde9b;
+}
+.level-8-skill li:nth-child(-n+8) {
+  color: #edde9b;
+}
+.level-9-skill li:nth-child(-n+9) {
+  color: #edde9b;
+}
+.level-10-skill li:nth-child(-n+10) {
+  color: #edde9b;
+}
+
+
+/* LIFE LINE */
+
+
+
+.timeline {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  padding: 100px 50px;
+  position: relative;
+
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: calc(33% + 15px);
+  bottom: 0px;
+  width: 4px;
+  background: #ddd;
+}
+.timeline:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+.entry .title {
+  margin-bottom: .5em;
+  float: left;
+  width: 33%;
+  padding-right: 30px;
+  text-align: right;
+  position: relative;
+}
+.entry .title:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 4px solid #f3e3a8;
+  background-color: #fff;
+  border-radius: 100%;
+  top: 15%;
+  right: -8px;
+  z-index: 99;
+}
+.entry .title h3 {
+  margin: 0;
+  font-size: 120%;
+}
+.entry .title p {
+  margin: 0;
+  font-size: 100%;
+}
+.entry .body {
+  margin: 0 0 3em;
+  float: right;
+  width: 66%;
+  padding-left: 30px;
+}
+.entry .body p {
+  line-height: 1.4em;
+}
+.entry .body p:first-child {
+  margin-top: 0;
+  font-weight: 400;
+}
+.entry .body ul {
+  color: #aaa;
+  padding-left: 0;
+  list-style-type: none;
+}
+.entry .body ul li:before {
+  content: "–";
+  margin-right: .5em;
 }
