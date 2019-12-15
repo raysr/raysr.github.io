@@ -23,24 +23,23 @@ min-width: 80%;
 
 .my-name
 {
-  margin-top:10px;
-  margin-bottom: 20px;
-  justify-content: space-between;
   color:#434343;
+  top: 0px;
 
 }
 .bolded
 {
   font-weight: bold;
 }
-.my-name a
-{
-  float: right;
-  right: 0px;
-}
+
 .my-name h3
 {
   font-size:34px;
+  top: 0px;
+}
+.heater
+{
+  font-size:32px;
 }
 .name-exp
 {
@@ -108,11 +107,27 @@ min-width: 80%;
 /*  color:#eddab0*/
 }
 
+.icona-resume:hover
+{
+  
+  color:#e6d7ae;
+  text-decoration: none;
+}
+
+.icona-resume
+{
+  font-weight: bold;
+  font-size: 24px;
+  color:#2b2b2b;
+/*  color:#eddab0*/
+}
+
 
 
 
 #leftpart
 {
+  height: 100%;
   background-color: #231f20;
   color: #cdcbcc;
   overflow: auto;
@@ -132,19 +147,32 @@ min-width: 80%;
   width: 100%;
   padding: 10px;
 }
-.row
+.mainrow
 {
   height: 100%;
   max-height: 100%;
 }
-.container
+
+.container-special
 {
   height: 100%;
+}
+
+.job-name
+{
+  font-size:22px;
+  font-weight: bold;
 }
 
 .section-title
 {
   font-size:28px;
+  color:#4f4f4f;
+}
+.section-title-bis
+{
+  font-size:28px;
+  margin-bottom: -2%;
   color:#4f4f4f;
 }
 .project h2
@@ -219,8 +247,7 @@ hr{
 }
 .hobbies
 {
-  justify-content: space-between;
-  display: flex;
+
   margin-bottom: 20px;
 }
 .hobby-icon
@@ -231,7 +258,7 @@ hr{
 {
   justify-content: space-between;
   display: flex;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 .break{
