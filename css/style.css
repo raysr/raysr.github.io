@@ -1,6 +1,6 @@
 
 :root {
-  --main-bg-color: #d0d1d3;
+  --main-bg-color: #e5e6e8;
   --left-bg : #231f20;
   --right-bg:#fefefe;
   --about-bg: #e5e6e8;
@@ -92,7 +92,7 @@ min-width: 80%;
   max-height: 48%;
   max-width: 48%;
   margin-bottom: 5%;
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid var(--first-color);
 }
 
 .icona:hover
@@ -168,6 +168,7 @@ min-width: 80%;
 {
   border-radius: 15px; 
   background-color: var(--about-bg);
+  font-size:var(--element-title-size);
   width: 100%;
   padding: 10px;
 }
