@@ -30,6 +30,7 @@ min-width: 80%;
 .bolded
 {
   font-weight: bold;
+  font-style:32px;
 }
 .my-name a
 {
@@ -189,7 +190,7 @@ min-width: 80%;
 {
   color:#292929 !important;
   font-weight: bold;
-  font-size:24px;
+  font-size:32px;
 }
 .skill-section
 {
@@ -210,17 +211,25 @@ hr{
 .hobbies
 {
   justify-content: space-between;
+  display: flex;
+}
+.hobby-icon
+{
+  font-size:30px;
 }
 .languages
 {
-  font-size: 22px;
+  justify-content: space-between;
+  display: flex;
+  font-size: 30px;
 }
 .break{
   display: inline;
 }
-.bottom-section
+ol li
 {
-
+  font-size:22px;
+  list-style:disc;
 }
 .header{
   color: #2a2a2a !important;
