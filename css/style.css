@@ -1,12 +1,32 @@
+
+:root {
+  --main-bg-color: #d0d1d3;
+  --left-bg : #231f20;
+  --right-bg:#fefefe;
+  --about-bg: #e5e6e8;
+  --first-color: #e6d7ae;
+  --third-color: #2b2b2b;
+  --section-title: #4f4f4f;
+  --left-part-color: #cdcbcc;
+
+  --right-part-icon-size: 30px;
+  --left-part-icon-size: 18px;
+
+  --element-title-size:24px;
+  --element-description-size:18px;
+}
+
+
+
 html, body
 {
   height: 100%;
   width: 100%;
-  background-color: #d0d1d3;
+  background-color: var(--main-bg-color);
 /*  background-image: url('../resources/background.png');*/
   font-family: 'Cairo';
   color: black; 
-    font-size: 18px;
+
 }
 .row{
   max-height: 100%;
@@ -34,7 +54,7 @@ min-width: 80%;
 
 .my-name h3
 {
-  font-size:34px;
+  font-size:var(----element-title-size);
   top: 0px;
 }
 .heater
@@ -48,7 +68,7 @@ min-width: 80%;
 }
 .name-exp
 {
-  font-size: 24px;
+  font-size:var(--element-title-size);
 }
 #dev
 {
@@ -62,7 +82,7 @@ min-width: 80%;
 #flicha:hover
 {
   font-size: 30px;
-  color: #e6d7ae;
+  color:var(--first-color);
 }
 
 .photo
@@ -77,15 +97,15 @@ min-width: 80%;
 
 .icona:hover
 {
-  color:#e6d7ae;
+  color:var(--first-color);
   text-decoration: none;
 }
 
 .icona
 {
 
-  font-size: 16px;
-  color:#e7e3e4;
+  font-size: var(--left-part-icon-size);
+  color:var(--left-part-color);
 /*  color:#eddab0*/
 }
 .icona
@@ -98,7 +118,7 @@ min-width: 80%;
 .icona-project:hover
 {
   
-  color:#e6d7ae;
+  color:var(--first-color);
   text-decoration: none;
 }
 
@@ -107,24 +127,23 @@ min-width: 80%;
   justify-content: space-between;
   display: flex;
   font-weight: bold;
-  font-size: 24px;
-  color:#2b2b2b;
-/*  color:#eddab0*/
+  font-size: var(--right-part-icon-size);
+  color:var(--third-color);
 }
 
 .icona-resume:hover
 {
   
-  color:#e6d7ae;
+  color:var(--first-color);
   text-decoration: none;
 }
 
 .icona-resume
 {
   font-weight: bold;
-  font-size: 24px;
-  color:#2b2b2b;
-/*  color:#eddab0*/
+  font-size: var(--right-part-icon-size);
+  color:var(--third-color);
+
 }
 
 
@@ -133,22 +152,22 @@ min-width: 80%;
 #leftpart
 {
   height: 100%;
-  background-color: #231f20;
-  color: #cdcbcc;
+  background-color: var(--left-bg);
+  color: var(--left-part-color);
   overflow: auto;
   text-align: center;
 }
 #rightpart
 {
   padding: 2%;
-  background-color: #fefefe;
+  background-color: var(--right-bg);
   overflow-y:auto;
       overflow-x:hidden;
 }
 #about-section
 {
   border-radius: 15px; 
-  background-color: #e5e6e8;
+  background-color: var(--about-bg);
   width: 100%;
   padding: 10px;
 }
@@ -165,35 +184,36 @@ min-width: 80%;
 
 .job-name
 {
-  font-size:22px;
+  font-size:var(--element-title-size);
   font-weight: bold;
 }
 
 .section-title
 {
-  font-size:28px;
-  color:#4f4f4f;
+  font-size:var(--element-title-size);
+  color:var(--section-title);
 }
 .section-title-bis
 {
-  font-size:28px;
-  margin-bottom: -2%;
-  color:#4f4f4f;
+  font-size: var(--element-title-size);
+  margin-top: 4%;
+  margin-bottom: 4%;
+  color:var(--section-title);
 }
 .project h2
 {
-  font-size:24px;
+  font-size:var(--element-title-size);
   color: #616161;
 }
 .project p
 {
-  font-size:22px;
-  color:#4b4b4b;
+  font-size:var(--element-description-size);
+  color:var(--section-title);
 }
 .experience-desc
 {
-  font-size:22px;
-  color:#4b4b4b;
+  font-size: var(--element-description-size);
+  color:var(--section-title);
 }
 .project div
 {
@@ -232,7 +252,7 @@ width: 100%;
   font-size:32px;
 }
 .title-sec .break{
-  font-size:32px;
+  font-size:var(--element-title-size);
 }
 .skill-section
 {
@@ -252,7 +272,6 @@ hr{
 }
 .hobbies
 {
-
   margin-bottom: 20px;
 }
 .hobby-icon
@@ -263,7 +282,7 @@ hr{
 {
   justify-content: space-between;
   display: flex;
-  font-size: 20px;
+  font-size: var(--element-title-size);
   margin-bottom: 20px;
 }
 .break{
@@ -271,14 +290,14 @@ hr{
 }
 ol li
 {
-  font-size:22px;
+  font-size:var(--element-description-size);
   list-style:disc;
 }
 .header{
-  color: #2a2a2a !important;
+  color: var(--section-title) !important;
 }
 .header:hover{
-  color:#ede39c;
+  color: var(--first-color);
 }
 /* All good till now. Now we'll style the background */
 progress::-webkit-progress-bar {
@@ -313,13 +332,13 @@ progress::-webkit-progress-value {
 
 /* SKILLS CIRCLES */
 .skill-container h3{
-  font-size: 24px;
+  font-size: var(--element-title-size);
 }
 
 
 
 .skill-bar {
-  font-size: 24px;
+  font-size: var(--element-title-size);
   border-radius: 50% 50%;
 }
 
@@ -334,39 +353,39 @@ progress::-webkit-progress-value {
 }
 
 .level-1-skill li:nth-child(-n+1) {
-  color: #edde9b;
+  color:var(--first-color);
 }
 
 .level-2-skill li:nth-child(-n+2) {
-  color: #edde9b;
+  color: var(--first-color);
 }
 
 
 .level-3-skill li:nth-child(-n+3) {
-  color: #edde9b;
+  color: var(--first-color);
 }
 
 .level-4-skill li:nth-child(-n+4) {
-  color: #edde9b;
+  color: var(--first-color);
 }
 
 .level-5-skill li:nth-child(-n+5) {
-  color: #edde9b;
+  color: var(--first-color);
 }
 .level-6-skill li:nth-child(-n+6) {
-  color: #edde9b;
+  color: var(--first-color);
 }
 .level-7-skill li:nth-child(-n+7) {
-  color: #edde9b;
+  color: var(--first-color);
 }
 .level-8-skill li:nth-child(-n+8) {
-  color: #edde9b;
+  color: var(--first-color);
 }
 .level-9-skill li:nth-child(-n+9) {
-  color: #edde9b;
+  color: var(--first-color);
 }
 .level-10-skill li:nth-child(-n+10) {
-  color: #edde9b;
+  color: var(--first-color);
 }
 
 
@@ -390,7 +409,7 @@ progress::-webkit-progress-value {
   font-weight: bold;
 }
 .timeline-item p {
-  font-size: 20px;
+  font-size: var(--element-description-size);
   font-style: italic;
 }
 .timeline-item::before {
