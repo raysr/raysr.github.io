@@ -3,7 +3,7 @@ html, body
   height: 100%;
   width: 100%;
   background-color: #d0d1d3;
-  background-image: url('../resources/background.png');
+/*  background-image: url('../resources/background.png');*/
   font-family: 'Cairo';
   color: black; 
     font-size: 18px;
@@ -19,6 +19,32 @@ html{
 {
 min-width: 80%;
 }
+
+.my-name
+{
+  justify-content: space-between;
+  
+}
+.my-name a
+{
+  float: right;
+  right: 0px;
+}
+
+#dev
+{
+  display: none;
+}
+#flicha
+{
+  font-size: 30px;
+}
+#flicha:hover
+{
+  font-size: 30px;
+  color: #e6d7ae;
+}
+
 .photo
 {
   margin-top:5%;
@@ -29,8 +55,49 @@ min-width: 80%;
 }
 .links
 {
+  color:#e7e3e4;
   max-height: 60%;
 }
+.icona:hover
+{
+  color:#e6d7ae;
+  text-decoration: none;
+}
+
+.icona
+{
+
+  font-size: 24px;
+  color:#e7e3e4;
+/*  color:#eddab0*/
+}
+.icona
+{
+  font-weight: 100;
+}
+
+
+
+.icona-project:hover
+{
+  
+  color:#e6d7ae;
+  text-decoration: none;
+}
+
+.icona-project
+{
+  font-weight: bold;
+  font-size: 24px;
+  color:#2b2b2b;
+/*  color:#eddab0*/
+}
+
+
+
+
+
+
 #leftpart
 {
   background-color: #231f20;
@@ -40,7 +107,6 @@ min-width: 80%;
 }
 #rightpart
 {
-  padding: 2%;
   background-color: #fefefe;
   overflow-y:auto;
       overflow-x:hidden;
@@ -48,6 +114,7 @@ min-width: 80%;
 #about-section
 {
   background-color: #e5e6e8;
+  width: 100%;
 }
 .row
 {
@@ -83,27 +150,17 @@ min-width: 80%;
 {
   font-size:15px;
 }
-.icon:hover
+
+
+.links:hover
 {
   color:#e6d7ae;
-  font-size: 24px;
 }
-.icon
+
+
+.skill-container h6
 {
-  font-size: 24px;
-}
-.icona
-{
-  color:#e7e3e4;
-  font-size: 24px;
-}
-.icona:hover
-{
-  color:#e6d7ae;
-  text-decoration: none;
-}
-.skill-container h3
-{
+  font-weight: bold;
   padding:0px;
 }
 .colskill
@@ -136,8 +193,12 @@ hr{
 {
   justify-content: space-between;
 }
+.languages
+{
+  font-size: 22px;
+}
 .break{
-  display: inline-block;
+  display: inline;
 }
 .bottom-section
 {
@@ -189,14 +250,17 @@ progress::-webkit-progress-value {
 
 .skill-bar {
   font-size: 24px;
+  border-radius: 50% 50%;
 }
 
 .skill-bar li {
   display: inline;
+  border-radius: 50% 50%;
 }
 
 .skill-bar li:before {
   content: '•';
+  border-radius: 50% 50%;
 }
 
 .level-1-skill li:nth-child(-n+1) {
@@ -242,7 +306,6 @@ progress::-webkit-progress-value {
 
 .timeline {
   width: 100%;
-
   background: #fff;
   padding: 100px 50px;
   position: relative;
