@@ -22,8 +22,14 @@ min-width: 80%;
 
 .my-name
 {
+  margin-top:10px;
+  margin-bottom: 20px;
   justify-content: space-between;
-  
+  color:#434343;
+}
+.bolded
+{
+  font-weight: bold;
 }
 .my-name a
 {
@@ -107,14 +113,17 @@ min-width: 80%;
 }
 #rightpart
 {
+  padding: 2%;
   background-color: #fefefe;
   overflow-y:auto;
       overflow-x:hidden;
 }
 #about-section
 {
+  border-radius: 15px; 
   background-color: #e5e6e8;
   width: 100%;
+  padding: 10px;
 }
 .row
 {
@@ -139,7 +148,16 @@ min-width: 80%;
 .project p
 {
   font-size:22px;
-  color:#838383;
+  color:#4b4b4b;
+}
+.experience-desc
+{
+  font-size:22px;
+  color:#4b4b4b;
+}
+.project div
+{
+  font-style: italic;
 }
 .col 
 {
