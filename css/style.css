@@ -45,6 +45,7 @@ min-width: 80%;
 #flicha
 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 #flicha:hover
 {
@@ -99,8 +100,6 @@ min-width: 80%;
   color:#2b2b2b;
 /*  color:#eddab0*/
 }
-
-
 
 
 
@@ -212,6 +211,7 @@ hr{
 {
   justify-content: space-between;
   display: flex;
+  margin-bottom: 20px;
 }
 .hobby-icon
 {
@@ -222,6 +222,7 @@ hr{
   justify-content: space-between;
   display: flex;
   font-size: 30px;
+  margin-bottom: 20px;
 }
 .break{
   display: inline;
