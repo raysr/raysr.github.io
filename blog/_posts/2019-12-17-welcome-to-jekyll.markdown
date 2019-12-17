@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Rayan Samy Ramoul Blog"
 date:   2019-12-17 02:29:14 +0100
 categories: jekyll update
 ---
