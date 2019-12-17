@@ -295,24 +295,3 @@ $(window).scroll(function () {
   }
 });
 */
-
-
-function myFunction() {
-  var moreText = document.getElementById("dev");
-  var btnText = document.getElementById("flicha");
-  console.log("AAAAH : ");
-  console.log(window.getComputedStyle(btnText, null).getPropertyValue("display").toString())
-  if (moreText.style.display === "none") {
-    console.log("h1");
-    moreText.style.display = "inline";
-    btnText.innerHTML = "<i onclick=\"myFunction()\" id=\"myBtn\" class=\"fas fa-angle-double-up center-align\"></i>";
-
-  
-  } else{
-    console.log("h2");
-    moreText.style.display = "none";
-    btnText.innerHTML = "<i onclick=\"myFunction()\" id=\"myBtn\" class=\"fas fa-angle-double-down center-align\"></i>";
-
-   
-  }
-} 
