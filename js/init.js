@@ -278,13 +278,27 @@ jQuery(document).ready(function($){
 
 (function($){
   $(function(){
-
     $('.sidenav').sidenav();
     $('.parallax').parallax();
-
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
+
+function myFunction() {
+	var moreText = document.getElementById("dev");
+	var btnText = document.getElementById("flicha");
+	if (moreText.style.display === "none") {
+	  moreText.style.display = "inline";
+	  btnText.innerHTML = "<i onclick=\"myFunction()\" id=\"myBtn\" class=\"fas fa-angle-double-up center-align\"></i>";
+  
+	
+	} else{
+	  moreText.style.display = "none";
+	  btnText.innerHTML = "<i onclick=\"myFunction()\" id=\"myBtn\" class=\"fas fa-angle-double-down center-align\"></i>";
+  
+	 
+	}
+  } 
 
 /*
 $(window).scroll(function () {
