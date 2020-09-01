@@ -196,6 +196,7 @@ box-shadow: 3px 10px 29px 0px rgba(0,0,0,0.75);
   }
 
 .hexagon1 {
+  justify-items: center; justify-content:center; align-content:center;
   border-style: solid;
     border-color: var(--first-color);
   width: 400px;
